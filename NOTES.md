@@ -158,3 +158,41 @@ I created the ranking measure manually using RANKX. The ALL function removes the
 
 The measure was tested using the product item, Total Sales, and Product Sales Rank fields.
 
+
+
+\## Measure 4: Cold Brew Sales
+
+
+
+\### Copilot Attempt
+
+
+
+Power BI Copilot was not available because my current account did not have access to a compatible Copilot workspace. Therefore, no Copilot-generated DAX suggestion was available for this measure.
+
+
+
+\### DAX Used
+
+
+
+```DAX
+
+Cold Brew Sales =
+
+CALCULATE(
+
+&#x20;   \[Total Sales],
+
+&#x20;   Dim\_Product\[item] = "Cold Brew"
+
+)
+
+
+
+Rework / Correction
+
+
+
+I created this measure manually to specifically analyze Cold Brew sales. The CALCULATE function applies a filter to the item column so that Total Sales is calculated only for Cold Brew. This measure will be used in the dashboard to identify the monthly sales pattern of Cold Brew.
+
