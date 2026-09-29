@@ -42,3 +42,37 @@ RETURN
 
 &#x20;   )
 
+
+
+\## Measure 2: Running Total Sales
+
+
+
+\### Copilot Attempt
+
+Power BI Copilot was not available because my current account did not have access to a compatible Copilot workspace. Therefore, no Copilot-generated DAX suggestion was available for this measure.
+
+
+
+\### DAX Used
+
+
+
+```DAX
+
+Running Total Sales =
+
+CALCULATE(
+
+&#x20;   \[Total Sales],
+
+&#x20;   FILTER(
+
+&#x20;       ALL(Dim\_Date\[date]),
+
+&#x20;       Dim\_Date\[date] <= MAX(Dim\_Date\[date])
+
+&#x20;   )
+
+)
+
