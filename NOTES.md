@@ -40,7 +40,7 @@ RETURN
 
 &#x20;       PreviousMonthSales
 
-&#x20;   )
+&#x20;   )'''
 
 
 
@@ -78,7 +78,7 @@ CALCULATE(
 
 &#x20;   )
 
-)
+)'''
 
 
 
@@ -116,7 +116,7 @@ RANKX(
 
 &#x20;   DENSE
 
-)
+)'''
 
 
 
