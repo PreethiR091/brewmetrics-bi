@@ -76,3 +76,37 @@ CALCULATE(
 
 )
 
+\## Measure 3: Product Sales Rank
+
+
+
+\### Copilot Attempt
+
+Power BI Copilot was not available because my current account did not have access to a compatible Copilot workspace. Therefore, no Copilot-generated DAX suggestion was available for this measure.
+
+
+
+\### DAX Used
+
+
+
+```DAX
+
+Product Sales Rank =
+
+RANKX(
+
+&#x20;   ALL(Dim\_Product\[item]),
+
+&#x20;   \[Total Sales],
+
+&#x20;   ,
+
+&#x20;   DESC,
+
+&#x20;   DENSE
+
+)
+
+
+
