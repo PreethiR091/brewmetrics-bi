@@ -44,6 +44,10 @@ RETURN
 
 
 
+
+
+
+
 \## Measure 2: Running Total Sales
 
 
@@ -75,6 +79,12 @@ CALCULATE(
 &#x20;   )
 
 )
+
+
+
+
+
+
 
 \## Measure 3: Product Sales Rank
 
